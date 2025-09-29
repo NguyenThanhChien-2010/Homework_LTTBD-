@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#D6EFFF" /> <!-- màu nền xanh nhạt -->
+    <stroke
+        android:width="3dp"
+        android:color="#2196F3"/> <!-- viền xanh -->
+</shape>

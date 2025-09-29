@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Hàng trên cùng: Nút back và edit -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/square_button_bg"
+        android:src="@drawable/ic_arrow_back"
+        android:scaleType="centerInside"
+        android:tint="#000000"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Nội dung chính ở giữa -->
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/square_button_bg"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_edit"
+        android:tint="#4CAF50" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <!-- Avatar với border tròn -->
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="80dp"
+
+            android:background="@drawable/circle_border">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_placeholder" />
+
+        </RelativeLayout>
+
+        <!-- Tên -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp"
+            android:text="Johan Smith"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Địa chỉ -->
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="California, USA"
+            android:textColor="#808080"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
